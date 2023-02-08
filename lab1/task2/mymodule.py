@@ -1,18 +1,8 @@
 import requests
-from bs4 import BeautifulSoup
 
-def get_city():
-    city = input("Please enter the name of the city: ")
-    if city.lower() in ["moscow", "st. petersburg", "kazan", "novosibirsk", "yekaterinburg"]:
-        print("Country 404")
-    else:
-        print("City is: " + city)
+APPID = "a2087aa974bd561a2f044deb771ba6f9"
+URL_BASE = "https://api.openweathermap.org/data/2.5/"
 
 
-def get_weather(city):
-    url = 'https://www.weather-forecast.com/locations/' + city + '/forecasts/latest'
-    page = requests.get(url)
-    soup = BeautifulSoup(page.content, 'html.parser')
-    weather_data = soup.find_all('span', class_='b-forecast__table-description-title')
-    weather = weather_data[0].text
-    print(weather)
+def current_weather(q: str = "Chicago", appid: str = APPID) -> dict:
+    return requests.get(URL_BASE + "weather", params=locals()).json()
