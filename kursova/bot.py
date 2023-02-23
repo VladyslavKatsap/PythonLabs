@@ -40,7 +40,7 @@ models = ['4Runner', 'Avalon', 'Camry', 'Corolla', 'Highlander', 'Land Cruiser',
           'Atlas', 'Beetle', 'Golf', 'Jetta', 'Passat', 'Tiguan', 'Touareg', 'Arteon', 'ID.4', 'Taos',
           'RX', 'NX', 'ES', 'IS', 'UX', 'LS', 'GX', 'RC', 'LC', 'CT',
           'A4', 'A3', 'Q5', 'Q7', 'A6', 'A5', 'Q3', 'A1', 'A7', 'TT',
-          '208', '3008', '308', '2008', '508', '207', '206', '407', '307', '108',
+          '208', '3008', '308', '508', '207', '206', '407', '307', '108',
           'Clio', 'Megane', 'Captur', 'Kadjar', 'Twingo', 'Scenic', 'Zoe', 'Koleos', 'Talisman', 'Espace',
           'Astra', 'Corsa', 'Insignia', 'Mokka', 'Zafira', 'Adam', 'Crossland X', 'Grandland X', 'Karl', 'Antara',
           'Інша модель']
@@ -114,13 +114,12 @@ def query_brand(call):
         bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
     else:
         bot.send_message(call.message.chat.id, 'Обраний бренд: ' + br)
+        print(br)
         model(call.message)
 
 
 @bot.message_handler(content_types=["text"])
 def model(message):
-    print(br)
-
     if br == "Toyota":
         mark = telebot.types.InlineKeyboardMarkup()
         button1 = telebot.types.InlineKeyboardButton(text="4Runner", callback_data="4Runner")
@@ -511,18 +510,17 @@ def model(message):
         button1 = telebot.types.InlineKeyboardButton(text="208", callback_data="208")
         button2 = telebot.types.InlineKeyboardButton(text="3008", callback_data="3008")
         button3 = telebot.types.InlineKeyboardButton(text="308", callback_data="308")
-        button4 = telebot.types.InlineKeyboardButton(text="2008", callback_data="2008")
-        button5 = telebot.types.InlineKeyboardButton(text="508", callback_data="508")
-        button6 = telebot.types.InlineKeyboardButton(text="207", callback_data="207")
-        button7 = telebot.types.InlineKeyboardButton(text="206", callback_data="206")
-        button8 = telebot.types.InlineKeyboardButton(text="407", callback_data="407")
-        button9 = telebot.types.InlineKeyboardButton(text="307", callback_data="307")
-        button10 = telebot.types.InlineKeyboardButton(text="108", callback_data="108")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
+        button4 = telebot.types.InlineKeyboardButton(text="508", callback_data="508")
+        button5 = telebot.types.InlineKeyboardButton(text="207", callback_data="207")
+        button6 = telebot.types.InlineKeyboardButton(text="206", callback_data="206")
+        button7 = telebot.types.InlineKeyboardButton(text="407", callback_data="407")
+        button8 = telebot.types.InlineKeyboardButton(text="307", callback_data="307")
+        button9 = telebot.types.InlineKeyboardButton(text="108", callback_data="108")
+        button10 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
+        button11 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
+        button12 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
         mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+                 button12)
         bot.send_message(message.chat.id,
                          'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
                          reply_markup=mark)
@@ -579,6 +577,7 @@ def query_mod(call):
         bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
     else:
         bot.send_message(call.message.chat.id, 'Обрана модель: ' + mod)
+        print(mod)
         year(call.message)
 
 
@@ -633,6 +632,7 @@ def query_year(call):
         bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
     else:
         bot.send_message(call.message.chat.id, 'Обраний рік випуску: ' + yer)
+        print(yer)
         engine_type(call.message)
 
 
@@ -659,6 +659,7 @@ def query_enginetype(call):
         bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
     else:
         bot.send_message(call.message.chat.id, 'Обраний тип двигуна: ' + ent)
+        print(ent)
         engine(call.message)
 
 
@@ -720,9 +721,11 @@ def query_enginetype(call):
 
     elif ent == 'Бензиновий' or 'Дизельний' or 'Гібридний':
         bot.send_message(call.message.chat.id, "Обраний об'єм двигуна: " + eng)
+        print(eng)
         price(call.message)
     else:
         bot.send_message(call.message.chat.id, 'Обрана потужність двигуна: ' + eng)
+        print(eng)
         price(call.message)
 
 
@@ -744,6 +747,7 @@ def query_enginetype(call):
     global pr
     pr = call.data
     bot.send_message(call.message.chat.id, 'Обрана вартість авто: ' + pr)
+    print(pr)
     info(call.message)
 
 
@@ -751,7 +755,7 @@ def query_enginetype(call):
 def info(message):
     bot.send_message(message.chat.id, 'Отже ви вибрали:\n' + 'Бренд: ' + br + '\n' + 'Модель: ' +
                      mod + '\n' + 'Рік випуску: ' + yer + '\n' + 'Тип двигуна: ' + ent.lower() + '\n' + "Потужність/Об'єм двигуна: " + eng + '\n' +
-                     'Вартість: ' + pr.lower())
+                     'Вартість авто: ' + pr.lower())
 
 
 bot.polling()
