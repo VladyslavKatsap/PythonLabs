@@ -179,7 +179,7 @@ def model(message):
         button10 = telebot.types.InlineKeyboardButton(text="Edge", callback_data="Edge")
         mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
 
@@ -195,13 +195,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Malibu", callback_data="Malibu")
         button9 = telebot.types.InlineKeyboardButton(text="Impala", callback_data="Impala")
         button10 = telebot.types.InlineKeyboardButton(text="Suburban", callback_data="Suburban")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
 
@@ -217,13 +213,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Rogue", callback_data="Rogue")
         button9 = telebot.types.InlineKeyboardButton(text="Sentra", callback_data="Sentra")
         button10 = telebot.types.InlineKeyboardButton(text="Titan", callback_data="Titan")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Jeep":
@@ -238,13 +230,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Liberty", callback_data="Liberty")
         button9 = telebot.types.InlineKeyboardButton(text="Patriot", callback_data="Patriot")
         button10 = telebot.types.InlineKeyboardButton(text="Wagoneer", callback_data="Wagoneer")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
 
@@ -261,13 +249,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Jimmy", callback_data="Jimmy")
         button9 = telebot.types.InlineKeyboardButton(text="Tracker", callback_data="Tracker")
         button10 = telebot.types.InlineKeyboardButton(text="Suburban", callback_data="Suburban")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Subaru":
@@ -282,13 +266,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="WRX", callback_data="WRX")
         button9 = telebot.types.InlineKeyboardButton(text="Baja", callback_data="Baja")
         button10 = telebot.types.InlineKeyboardButton(text="Tribeca", callback_data="Tribeca")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Lada":
@@ -303,13 +283,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Samara", callback_data="Samara")
         button9 = telebot.types.InlineKeyboardButton(text="2107", callback_data="2107")
         button10 = telebot.types.InlineKeyboardButton(text="2106", callback_data="2106")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
 
@@ -325,13 +301,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Veloster", callback_data="Veloster")
         button9 = telebot.types.InlineKeyboardButton(text="Ioniq", callback_data="Ioniq")
         button10 = telebot.types.InlineKeyboardButton(text="Venue", callback_data="Venue")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Kia":
@@ -346,13 +318,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="K5", callback_data="K5")
         button9 = telebot.types.InlineKeyboardButton(text="Niro", callback_data="Niro")
         button10 = telebot.types.InlineKeyboardButton(text="Rio", callback_data="Rio")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Mazda":
@@ -367,13 +335,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="CX-3", callback_data="CX-3")
         button9 = telebot.types.InlineKeyboardButton(text="B-Series", callback_data="B-Series")
         button10 = telebot.types.InlineKeyboardButton(text="MPV", callback_data="MPV")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
 
@@ -389,13 +353,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Viper", callback_data="Viper")
         button9 = telebot.types.InlineKeyboardButton(text="Nitro", callback_data="Nitro")
         button10 = telebot.types.InlineKeyboardButton(text="Caliber", callback_data="Caliber")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "BMW":
@@ -410,13 +370,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Z4", callback_data="Z4")
         button9 = telebot.types.InlineKeyboardButton(text="6 Series", callback_data="6 Series")
         button10 = telebot.types.InlineKeyboardButton(text="4 Series", callback_data="4 Series")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Mercedes-Benz":
@@ -431,13 +387,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="M-Class", callback_data="M-Class")
         button9 = telebot.types.InlineKeyboardButton(text="CLS-Class", callback_data="CLS-Class")
         button10 = telebot.types.InlineKeyboardButton(text="CL-Class", callback_data="CL-Class")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Volkswagen":
@@ -452,13 +404,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Arteon", callback_data="Arteon")
         button9 = telebot.types.InlineKeyboardButton(text="ID.4", callback_data="ID.4")
         button10 = telebot.types.InlineKeyboardButton(text="Taos", callback_data="Taos")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Lexus":
@@ -473,13 +421,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="RC", callback_data="RC")
         button9 = telebot.types.InlineKeyboardButton(text="LC", callback_data="LC")
         button10 = telebot.types.InlineKeyboardButton(text="CT", callback_data="CT")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Audi":
@@ -494,13 +438,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="A1", callback_data="A1")
         button9 = telebot.types.InlineKeyboardButton(text="A7", callback_data="A7")
         button10 = telebot.types.InlineKeyboardButton(text="TT", callback_data="TT")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Peugeot":
@@ -514,13 +454,9 @@ def model(message):
         button7 = telebot.types.InlineKeyboardButton(text="407", callback_data="407")
         button8 = telebot.types.InlineKeyboardButton(text="307", callback_data="307")
         button9 = telebot.types.InlineKeyboardButton(text="108", callback_data="108")
-        button10 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button11 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button12 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Renault":
@@ -535,13 +471,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Koleos", callback_data="Koleos")
         button9 = telebot.types.InlineKeyboardButton(text="Talisman", callback_data="Talisman")
         button10 = telebot.types.InlineKeyboardButton(text="Espace", callback_data="Espace")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
     elif br == "Opel":
@@ -556,13 +488,9 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Grandland X", callback_data="Grandland X")
         button9 = telebot.types.InlineKeyboardButton(text="Karl", callback_data="Karl")
         button10 = telebot.types.InlineKeyboardButton(text="Antara", callback_data="Antara")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
-                         'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
+                         'Оберіть модель авто:',
                          reply_markup=mark)
 
 
@@ -571,12 +499,9 @@ def query_mod(call):
     bot.answer_callback_query(callback_query_id=call.id)
     global mod
     mod = call.data
-    if mod == 'Інша модель':
-        bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
-    else:
-        bot.send_message(call.message.chat.id, 'Обрана модель: ' + mod)
-        print(mod)
-        year(call.message)
+    bot.send_message(call.message.chat.id, 'Обрана модель: ' + mod)
+    print(mod)
+    year(call.message)
 
 
 @bot.message_handler(content_types=["text"])
@@ -611,13 +536,9 @@ def year(message):
     button27 = telebot.types.InlineKeyboardButton(text="2021", callback_data="2021")
     button28 = telebot.types.InlineKeyboardButton(text="2022", callback_data="2022")
     button29 = telebot.types.InlineKeyboardButton(text="2023", callback_data="2023")
-    button30 = telebot.types.InlineKeyboardButton(text="Інший", callback_data="Інший")
-    button31 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-    button32 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
     mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
              button12, button13, button14, button15, button16, button17, button18, button19, button20, button21,
-             button22, button23, button24, button25, button26, button27, button28, button29, button30, button31,
-             button32)
+             button22, button23, button24, button25, button26, button27, button28, button29)
     bot.send_message(message.chat.id, 'Оберіть рік випуску автомобіля', reply_markup=mark)
 
 
@@ -626,12 +547,9 @@ def query_year(call):
     bot.answer_callback_query(callback_query_id=call.id)
     global yer
     yer = call.data
-    if yer == 'Інший':
-        bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
-    else:
-        bot.send_message(call.message.chat.id, 'Обраний рік випуску: ' + yer)
-        print(yer)
-        engine_type(call.message)
+    bot.send_message(call.message.chat.id, 'Обраний рік випуску: ' + yer)
+    print(yer)
+    engine_type(call.message)
 
 
 @bot.message_handler(content_types=["text"])
@@ -641,10 +559,7 @@ def engine_type(message):
     button2 = telebot.types.InlineKeyboardButton(text="Дизельний", callback_data="Дизельний")
     button3 = telebot.types.InlineKeyboardButton(text="Гібридний", callback_data="Гібридний")
     button4 = telebot.types.InlineKeyboardButton(text="Електричний", callback_data="Електричний")
-    button5 = telebot.types.InlineKeyboardButton(text="Інший", callback_data="Інший")
-    button6 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-    button7 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-    mark.add(button1, button2, button3, button4, button5, button6, button7)
+    mark.add(button1, button2, button3, button4)
     bot.send_message(message.chat.id, 'Оберіть тип двигуна', reply_markup=mark)
 
 
@@ -653,12 +568,9 @@ def query_enginetype(call):
     bot.answer_callback_query(callback_query_id=call.id)
     global ent
     ent = call.data
-    if ent == 'Інший':
-        bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
-    else:
-        bot.send_message(call.message.chat.id, 'Обраний тип двигуна: ' + ent)
-        print(ent)
-        engine(call.message)
+    bot.send_message(call.message.chat.id, 'Обраний тип двигуна: ' + ent)
+    print(ent)
+    engine(call.message)
 
 
 @bot.message_handler(content_types=["text"])
@@ -685,12 +597,8 @@ def engine(message):
         button18 = telebot.types.InlineKeyboardButton(text="4.6", callback_data="4.6")
         button19 = telebot.types.InlineKeyboardButton(text="5.0", callback_data="5.0")
         button20 = telebot.types.InlineKeyboardButton(text="6.2", callback_data="6.2")
-        button21 = telebot.types.InlineKeyboardButton(text="Інший", callback_data="Інший")
-        button22 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button23 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
         mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13, button14, button15, button16, button17, button18, button19, button20, button21,
-                 button22, button23)
+                 button12, button13, button14, button15, button16, button17, button18, button19, button20)
         bot.send_message(message.chat.id, "Оберіть об'єм двигуна", reply_markup=mark)
 
     elif ent == 'Електричний':
@@ -702,10 +610,7 @@ def engine(message):
         button5 = telebot.types.InlineKeyboardButton(text="150 кВт", callback_data="150 кВт")
         button6 = telebot.types.InlineKeyboardButton(text="175 кВт", callback_data="175 кВт")
         button7 = telebot.types.InlineKeyboardButton(text="200 кВт", callback_data="200 кВт")
-        button8 = telebot.types.InlineKeyboardButton(text="Інший", callback_data="Інший")
-        button9 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button10 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
+        mark.add(button1, button2, button3, button4, button5, button6, button7)
         bot.send_message(message.chat.id, "Оберіть потужність двигуна", reply_markup=mark)
 
 
@@ -714,10 +619,7 @@ def query_enginetype(call):
     bot.answer_callback_query(callback_query_id=call.id)
     global eng
     eng = call.data
-    if eng == 'Інший':
-        bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
-
-    elif ent == 'Бензиновий' or 'Дизельний' or 'Гібридний':
+    if ent == 'Бензиновий' or 'Дизельний' or 'Гібридний':
         bot.send_message(call.message.chat.id, "Обраний об'єм двигуна: " + eng)
         print(eng)
         price(call.message)
@@ -733,9 +635,7 @@ def price(message):
     button1 = telebot.types.InlineKeyboardButton(text="До 470 тис. грн.", callback_data="До 470 тис. грн.")
     button2 = telebot.types.InlineKeyboardButton(text="До 720 тис. грн.", callback_data="До 720 тис. грн.")
     button3 = telebot.types.InlineKeyboardButton(text="Понад 720 тис. грн.", callback_data="Понад 720 тис. грн.")
-    button4 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-    button5 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-    mark.add(button1, button2, button3, button4, button5)
+    mark.add(button1, button2, button3)
     bot.send_message(message.chat.id, "Оберіть вартість авто", reply_markup=mark)
 
 
