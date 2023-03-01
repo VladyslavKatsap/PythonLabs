@@ -1,6 +1,13 @@
+import dp as dp
 import telebot
 import requests
 from bs4 import BeautifulSoup
+import asyncio
+import logging
+from aiogram import Bot, Dispatcher, executor, types
+from aiogram.utils.markdown import hlink, link
+import os
+from aiogram.dispatcher.filters import Text
 
 bot = telebot.TeleBot("6116036028:AAFIceklU-Wwz0TSC_cq9wJbrZ8NS4K_D50")
 
@@ -98,10 +105,8 @@ def brand(message):
     button19 = telebot.types.InlineKeyboardButton(text="Peugeot", callback_data="Peugeot")
     button20 = telebot.types.InlineKeyboardButton(text="Renault", callback_data="Renault")
     button21 = telebot.types.InlineKeyboardButton(text="Opel", callback_data="Opel")
-    button22 = telebot.types.InlineKeyboardButton(text="Інший", callback_data="Інший")
     mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-             button12, button13, button14, button15, button16, button17, button18, button19, button20, button21,
-             button22)
+             button12, button13, button14, button15, button16, button17, button18, button19, button20, button21)
     bot.send_message(message.chat.id, 'Оберіть бренд автомобіля', reply_markup=mark)
 
 
@@ -110,12 +115,9 @@ def query_brand(call):
     bot.answer_callback_query(callback_query_id=call.id)
     global br
     br = call.data
-    if br == 'Інший':
-        bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
-    else:
-        bot.send_message(call.message.chat.id, 'Обраний бренд: ' + br)
-        print(br)
-        model(call.message)
+    bot.send_message(call.message.chat.id, 'Обраний бренд: ' + br)
+    print(br)
+    model(call.message)
 
 
 @bot.message_handler(content_types=["text"])
@@ -175,11 +177,7 @@ def model(message):
         button8 = telebot.types.InlineKeyboardButton(text="Taurus", callback_data="Taurus")
         button9 = telebot.types.InlineKeyboardButton(text="Transit", callback_data="Transit")
         button10 = telebot.types.InlineKeyboardButton(text="Edge", callback_data="Edge")
-        button11 = telebot.types.InlineKeyboardButton(text="Інша модель", callback_data="Інша модель")
-        button12 = telebot.types.InlineKeyboardButton(text="Назад", callback_data="Назад")
-        button13 = telebot.types.InlineKeyboardButton(text="На початок", callback_data="На початок")
-        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
-                 button12, button13)
+        mark.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10)
         bot.send_message(message.chat.id,
                          'Оберіть модель авто, або натисніть кнопку "Назад", щоб повернутися до попереднього кроку',
                          reply_markup=mark)
@@ -573,7 +571,7 @@ def query_mod(call):
     bot.answer_callback_query(callback_query_id=call.id)
     global mod
     mod = call.data
-    if mod == 'Інший':
+    if mod == 'Інша модель':
         bot.send_message(call.message.chat.id, 'Ця функція поки недоступна.')
     else:
         bot.send_message(call.message.chat.id, 'Обрана модель: ' + mod)
